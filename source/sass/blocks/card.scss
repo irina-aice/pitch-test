@@ -1,0 +1,10 @@
+.card {
+  @include reset-list;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 32px;
+  color: $dark-blue;
+}
