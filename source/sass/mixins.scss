@@ -3,3 +3,25 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin reset-button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+@mixin container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    max-width: 610px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 1390px;
+  }
+}

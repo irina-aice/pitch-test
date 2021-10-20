@@ -1,0 +1,7 @@
+.product {
+  @include container;
+}
+
+.product__list {
+  @include reset-list;
+}

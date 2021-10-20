@@ -1,0 +1,24 @@
+.button {
+  @include reset-button;
+  cursor: pointer;
+
+  &--size {
+    padding: 2px 12px;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: $light-brown;
+    border: 1px solid $light-brown;
+    border-radius: 24px;
+  }
+
+  &--submit {
+    width: 100%;
+    min-height: 56px;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 32px;
+    color: $white;
+    background-color: $dark-blue;
+  }
+}

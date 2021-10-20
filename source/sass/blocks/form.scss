@@ -1,0 +1,15 @@
+.form__list {
+  @include reset-list;
+}
+
+.form__input {
+  width: 100%;
+  min-height: 44px;
+  color: inherit;
+  background-color: $lighter-grey;
+  border: 0;
+}
+
+.form__input::placeholder {
+  opacity: 1;
+}

@@ -1,0 +1,26 @@
+.collections {
+  @include container;
+}
+
+.collections__list {
+  @include reset-list;
+}
+
+.collections__item {
+  color: $white;
+  background-color: $light-grey;
+}
+
+.collections__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.collections__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  opacity: 0.5;
+}

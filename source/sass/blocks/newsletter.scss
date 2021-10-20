@@ -1,16 +1,16 @@
-.card {
-  @include reset-list;
+.newsletter {
+  @include container;
 }
 
-.card__title {
+.newsletter__title {
   margin: 0;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: inherit;
   line-height: 32px;
   color: $dark-blue;
 }
 
-.card__text {
+.newsletter__text {
   margin: 0;
   font-size: 18px;
   line-height: 28px;

@@ -1,3 +1,5 @@
+@import "modern-normalize/modern-normalize";
+@import "variables";
 @import "mixins";
 @import "fonts";
 @import "colors";
@@ -5,4 +7,18 @@
 @import "global";
 @import "blocks/slider";
 @import "blocks/subtitle";
+@import "blocks/product";
 @import "blocks/card";
+@import "blocks/button";
+@import "blocks/characteristics";
+@import "blocks/color";
+@import "blocks/size";
+@import "blocks/quantity";
+@import "blocks/cost";
+@import "blocks/details";
+@import "blocks/spoiler";
+@import "blocks/collections";
+@import "blocks/newsletter";
+@import "blocks/form";
+@import "blocks/gender";
+@import "blocks/agreement";

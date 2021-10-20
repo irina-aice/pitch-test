@@ -1,0 +1,48 @@
+.color__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color__label {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+.color__radio-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  &--dark-blue {
+    background-color: $dark-blue;
+  }
+
+  &--grey {
+    background-color: $grey;
+  }
+
+  &--blue {
+    background-color: $blue;
+  }
+}
+
+.color__input:checked + .color__label .color__radio-icon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid $dark-blue;
+  border-radius: 50%;
+}
