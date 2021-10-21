@@ -1,7 +1,32 @@
+.slider__slide {
+  background-repeat: no-repeat;
+  background-color: $light-brown;
+  background-position: center;
+  background-size: cover;
+
+  &--first {
+    background-image: url("../img/slider-img1.jpg");
+  }
+
+  &--second {
+    background-image: url("../img/slider-img2.jpg");
+  }
+
+  &--third {
+    background-image: url("../img/slider-img3.jpg");
+  }
+}
+
 .slider__content {
   @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 600px;
+  padding-top: 24px;
+  padding-bottom: 27px;
   color: $white;
-  background-color: $light-brown;
 }
 
 .slider__title {

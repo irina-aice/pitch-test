@@ -1,3 +1,7 @@
+.quantity {
+  width: 50%;
+}
+
 .quantity__inner {
   display: inline-flex;
   justify-content: center;
@@ -8,6 +12,14 @@
   position: relative;
   width: 16px;
   height: 16px;
+
+  &--less {
+    margin-right: 5px;
+  }
+
+  &--more {
+    margin-left: 5px;
+  }
 
   &::before,
   &--more::after {
@@ -34,21 +46,14 @@
 }
 
 .quantity__input {
-  width: 16px;
+  width: 36px;
   font-size: 24px;
   line-height: inherit;
   font-weight: inherit;
   border: 0;
   color: inherit;
+  text-align: center;
 }
-
-/*.quantity__input::placeholder {
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
-  color: inherit;
-  opacity: 1;
-}*/
 
 .quantity__input::-webkit-outer-spin-button,
 .quantity__input::-webkit-inner-spin-button {

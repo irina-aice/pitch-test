@@ -1,7 +1,12 @@
+.color {
+  margin-top: 16px;
+}
+
 .color__list {
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 8px;
 }
 
 .color__label {

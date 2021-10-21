@@ -12,14 +12,15 @@
 
 @mixin container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   box-sizing: border-box;
   margin: 0 auto;
 
-  @media (min-width: $width-tablet) {
-    max-width: 610px;
-  }
+  /*@media (min-width: $width-tablet) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }*/
 
   @media (min-width: $width-desktop) {
     max-width: 1390px;

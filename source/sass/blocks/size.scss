@@ -1,3 +1,7 @@
+.size {
+  margin-top: 24px;
+}
+
 .size__list {
   @include reset-list;
   display: flex;
@@ -41,4 +45,8 @@
 
 .size__input:disabled + .size__label .size__radio-icon {
   color: $lighter-grey;
+}
+
+.size__button {
+  margin-top: 24px;
 }
