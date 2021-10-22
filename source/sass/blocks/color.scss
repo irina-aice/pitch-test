@@ -2,11 +2,21 @@
   margin-top: 16px;
 }
 
+@media (min-width: $width-tablet) {
+  .color {
+    margin-top: 24px;
+  }
+}
+
 .color__list {
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
   margin-top: 8px;
+}
+
+.color__item + .color__item {
+  margin-left: 4px;
 }
 
 .color__label {

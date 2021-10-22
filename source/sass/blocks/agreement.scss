@@ -1,9 +1,21 @@
+.agreement {
+  margin-top: 32px;
+}
+
+@media (min-width: $width-tablet) {
+  .agreement {
+    margin-top: 40px;
+  }
+}
+
 .agreement__checkbox-text {
   color: $dark-blue;
 }
 
 .agreement__label-checkbox {
-  display: inline-flex;
+  display: inline-grid;
+  grid-template-columns: min-content auto;
+  grid-column-gap: 8px;
 }
 
 .agreement__checkbox-icon-wrapper {
@@ -30,6 +42,6 @@
   display: block;
 }
 
-.agreement__checkbox-text {
-  margin-left: 8px;
+.agreement__button {
+  margin-top: 16px;
 }

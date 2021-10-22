@@ -1,5 +1,6 @@
 .collections {
   @include container;
+  margin-top: 40px;
 }
 
 .collections__list {
@@ -25,6 +26,20 @@
   }
 }
 
+@media (min-width: $width-tablet) {
+  .collections__item {
+    min-height: 287px;
+
+    &--first {
+      background-image: url("../img/collection-1-tablet.jpg");
+    }
+
+    &--second {
+      background-image: url("../img/collection-2-tablet.jpg");
+    }
+  }
+}
+
 .collections__item + .collections__item {
   margin-top: 16px;
 }
@@ -39,10 +54,24 @@
   font-weight: 400;
 }
 
+@media (min-width: $width-tablet) {
+  .collections__title {
+    font-size: 40px;
+    line-height: 1;
+  }
+}
+
 .collections__text {
   margin: 0;
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
   opacity: 0.5;
+}
+
+@media (min-width: $width-tablet) {
+  .collections__text {
+    font-size: 18px;
+    line-height: 1;
+  }
 }

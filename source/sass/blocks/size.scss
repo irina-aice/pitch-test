@@ -2,10 +2,22 @@
   margin-top: 24px;
 }
 
+@media (min-width: $width-tablet) {
+  .size__inner {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .size__list {
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
+  transform: translateX(-12px);
+}
+
+.size__item + .size__item {
+  margin-left: 8px;
 }
 
 .size__label {
@@ -21,6 +33,7 @@
   display: inline-block;
   font-size: 20px;
   text-transform: uppercase;
+  transition: all .35s ease-in-out;
 }
 
 .size__input:checked + .size__label .size__radio-icon {
@@ -28,6 +41,29 @@
   color: $dark-blue;
 }
 
+.size__label .size__radio-icon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba($dark-blue, 0);
+  border-radius: 50%;
+  transition: all .35s ease-in-out;
+  transform: scale(0.5);
+}
+
+.size__input:checked + .size__label .size__radio-icon::before {
+  border-color: rgba($dark-blue, 1);
+  transform: scale(1);
+}
+
+/*
 .size__input:checked + .size__label .size__radio-icon::before {
   content: "";
   position: absolute;
@@ -42,6 +78,7 @@
   border: 1px solid $dark-blue;
   border-radius: 50%;
 }
+ */
 
 .size__input:disabled + .size__label .size__radio-icon {
   color: $lighter-grey;
@@ -49,4 +86,11 @@
 
 .size__button {
   margin-top: 24px;
+}
+
+@media (min-width: $width-tablet) {
+  .size__button {
+    margin-top: 0;
+    margin-left: 40px;
+  }
 }

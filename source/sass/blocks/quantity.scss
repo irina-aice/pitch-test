@@ -2,6 +2,12 @@
   width: 50%;
 }
 
+@media (min-width: $width-tablet) {
+  .quantity {
+    width: auto;
+  }
+}
+
 .quantity__inner {
   display: inline-flex;
   justify-content: center;

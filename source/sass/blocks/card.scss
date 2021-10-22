@@ -10,8 +10,24 @@
   color: $dark-blue;
 }
 
+@media (min-width: $width-tablet) {
+  .card__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
 .card__text {
   margin: 16px 4px 16px 0;
   font-size: 18px;
   line-height: 28px;
+}
+
+@media (min-width: $width-tablet) {
+  .card__text {
+    margin-bottom: 4px;
+    margin-right: 49px;
+    font-size: 20px;
+    line-height: 32px;
+  }
 }

@@ -1,12 +1,40 @@
+.gender {
+  margin-top: 12px;
+}
+
+@media (min-width: $width-tablet) {
+  .gender {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
 .gender__text {
   margin: 0;
   font-size: 20px;
   line-height: 32px;
 }
 
+@media (min-width: $width-tablet) {
+  .gender__text {
+    margin-right: 24px;
+  }
+}
+
 .gender__list {
   @include reset-list;
   display: flex;
+  margin-top: 4px;
+}
+
+@media (min-width: $width-tablet) {
+  .gender__list {
+    margin-top: 0;
+  }
+}
+
+.gender__item + .gender__item {
+  margin-left: 24px;
 }
 
 .gender__label {

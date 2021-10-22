@@ -2,6 +2,12 @@
   margin-top: 28px;
 }
 
+@media (min-width: $width-tablet) {
+  .details {
+    margin-top: 18px;
+  }
+}
+
 .details__text {
   margin: 8px 0;
   color: $dark_blue;

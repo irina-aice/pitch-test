@@ -1,13 +1,32 @@
 .form__list {
   @include reset-list;
+  margin-top: 28px;
+}
+
+@media (min-width: $width-tablet) {
+  .form__list {
+    margin-top: 24px;
+  }
+}
+
+.form__item {
+  margin-top: 16px;
 }
 
 .form__input {
   width: 100%;
   min-height: 44px;
+  padding: 0 16px;
   color: inherit;
-  background-color: $lighter-grey;
+  background-color: $pale-grey;
   border: 0;
+  border-radius: 1px;
+}
+
+@media (min-width: $width-tablet) {
+  .form__input {
+    max-width: 456px;
+  }
 }
 
 .form__input::placeholder {

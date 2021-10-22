@@ -1,5 +1,14 @@
 .newsletter {
   @include container;
+  margin-top: 52px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: $width-tablet) {
+  .newsletter {
+    margin-top: 48px;
+    padding-bottom: 29px;
+  }
 }
 
 .newsletter__title {
@@ -10,8 +19,21 @@
   color: $dark-blue;
 }
 
+@media (min-width: $width-tablet) {
+  .newsletter__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
 .newsletter__text {
-  margin: 0;
+  margin: 8px 20px 0 0;
   font-size: 18px;
   line-height: 28px;
+}
+
+@media (min-width: $width-tablet) {
+  .newsletter__text {
+    margin-top: 0;
+  }
 }

@@ -2,6 +2,12 @@
   width: 50%;
 }
 
+@media (min-width: $width-tablet) {
+  .cost {
+    width: auto;
+  }
+}
+
 .cost__value {
   line-height: 40px;
 }

@@ -17,6 +17,12 @@
   }
 }
 
+@media (min-width: $width-tablet) {
+  .slider__slide {
+    background-position: top;
+  }
+}
+
 .slider__content {
   @include container;
   display: flex;
@@ -33,10 +39,23 @@
   margin: 0;
   font-size: 48px;
   font-weight: 400;
-  line-height: 48px;
+  line-height: 1;
+}
+
+@media (min-width: $width-tablet) {
+  .slider__title {
+    font-size: 64px;
+  }
 }
 
 .slider__description {
   margin: 0;
   opacity: 0.8;
+}
+
+@media (min-width: $width-tablet) {
+  .slider__description {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
