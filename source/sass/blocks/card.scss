@@ -17,6 +17,12 @@
   }
 }
 
+@media (min-width: $width-desktop) {
+  .card__title {
+    margin-top: 24px;
+  }
+}
+
 .card__text {
   margin: 16px 4px 16px 0;
   font-size: 18px;
@@ -29,5 +35,13 @@
     margin-right: 49px;
     font-size: 20px;
     line-height: 32px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .card__text {
+    width: 51%;
+    margin-right: 0;
+    margin-bottom: 8px;
   }
 }

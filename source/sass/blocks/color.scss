@@ -8,6 +8,12 @@
   }
 }
 
+@media (min-width: $width-desktop) {
+  .color {
+    margin-top: 0;
+  }
+}
+
 .color__list {
   @include reset-list;
   display: flex;
@@ -26,6 +32,13 @@
   align-items: center;
   width: 48px;
   height: 48px;
+}
+
+@media (min-width: $width-desktop) {
+  .color__label {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .color__radio-icon {
@@ -47,6 +60,13 @@
   }
 }
 
+@media (min-width: $width-desktop) {
+  .color__radio-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 .color__input:checked + .color__label .color__radio-icon::before {
   content: "";
   position: absolute;
@@ -60,4 +80,11 @@
   height: 48px;
   border: 1px solid $dark-blue;
   border-radius: 50%;
+}
+
+@media (min-width: $width-desktop) {
+  .color__input:checked + .color__label .color__radio-icon::before {
+    width: 32px;
+    height: 32px;
+  }
 }

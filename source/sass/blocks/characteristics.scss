@@ -11,6 +11,13 @@
   }
 }
 
+@media (min-width: $width-desktop) {
+  .characteristics__fieldset-wrapper {
+    grid-column-gap: 56px;
+    margin-top: 16px;
+  }
+}
+
 .characteristics__fieldset {
   margin: 0;
   padding: 0;
@@ -29,5 +36,12 @@
     display: grid;
     grid-template-columns: 152px auto;
     grid-column-gap: 72px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .characteristics__block {
+    grid-template-columns: 104px auto;
+    grid-column-gap: 56px;
   }
 }

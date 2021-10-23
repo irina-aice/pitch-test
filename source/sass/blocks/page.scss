@@ -1,0 +1,15 @@
+@media (min-width: $width-desktop) {
+  .page {
+    display: flex;
+  }
+
+  .page__item--slider {
+    width: 44.12%;
+  }
+
+  .page__item--scroll {
+    width: 55.88%;
+    max-height: 768px;
+    overflow-y: auto;
+  }
+}

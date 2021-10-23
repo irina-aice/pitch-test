@@ -3,7 +3,19 @@
   padding-top: 8px;
 }
 
+@media (min-width: $width-desktop) {
+  .product {
+    padding-top: 56px;
+  }
+}
+
 .product__list {
   @include reset-list;
   margin-top: 40px;
+}
+
+@media (min-width: $width-desktop) {
+  .product__list {
+    margin-top: 32px;
+  }
 }

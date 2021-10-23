@@ -11,6 +11,13 @@
   }
 }
 
+@media (min-width: $width-desktop) {
+  .newsletter {
+    margin-top: 64px;
+    padding-bottom: 0;
+  }
+}
+
 .newsletter__title {
   margin: 0;
   font-size: 24px;

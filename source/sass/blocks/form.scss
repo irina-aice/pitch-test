@@ -36,3 +36,9 @@
 .form__button {
   margin-top: 40px;
 }
+
+@media (min-width: $width-desktop) {
+  .form__button {
+    margin-top: 72px;
+  }
+}

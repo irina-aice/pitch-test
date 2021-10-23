@@ -2,10 +2,22 @@
   margin-top: 24px;
 }
 
+@media (min-width: $width-desktop) {
+  .size {
+    margin-top: 0;
+  }
+}
+
 @media (min-width: $width-tablet) {
   .size__inner {
     display: flex;
     align-items: center;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .size__inner {
+    margin-top: 8px;
   }
 }
 
@@ -14,6 +26,12 @@
   display: flex;
   flex-wrap: wrap;
   transform: translateX(-12px);
+}
+
+@media (min-width: $width-desktop) {
+  .size__list {
+    transform: translateX(-6px);
+  }
 }
 
 .size__item + .size__item {
@@ -29,6 +47,13 @@
   height: 48px;
 }
 
+@media (min-width: $width-desktop) {
+  .size__label {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .size__radio-icon {
   display: inline-block;
   font-size: 20px;
@@ -36,9 +61,21 @@
   transition: all .35s ease-in-out;
 }
 
+@media (min-width: $width-desktop) {
+  .size__radio-icon {
+    font-size: 16px;
+  }
+}
+
 .size__input:checked + .size__label .size__radio-icon {
   font-size: 28px;
   color: $dark-blue;
+}
+
+@media (min-width: $width-desktop) {
+  .size__input:checked + .size__label .size__radio-icon {
+    font-size: 20px;
+  }
 }
 
 .size__label .size__radio-icon::before {
@@ -56,6 +93,13 @@
   border-radius: 50%;
   transition: all .35s ease-in-out;
   transform: scale(0.5);
+}
+
+@media (min-width: $width-desktop) {
+  .size__label .size__radio-icon::before {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .size__input:checked + .size__label .size__radio-icon::before {
@@ -92,5 +136,11 @@
   .size__button {
     margin-top: 0;
     margin-left: 40px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .size__button {
+    margin-left: 24px;
   }
 }
