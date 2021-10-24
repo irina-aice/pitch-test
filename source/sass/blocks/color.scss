@@ -88,3 +88,25 @@
     height: 32px;
   }
 }
+
+.color__radio-icon:hover::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid $grey;
+  border-radius: 50%;
+}
+
+@media (min-width: $width-desktop) {
+  .color__radio-icon:hover::before {
+    width: 32px;
+    height: 32px;
+  }
+}

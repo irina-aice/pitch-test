@@ -25,6 +25,13 @@
   height: 20px;
   color: $white;
   background-color: $dark-blue;
+
+  &:hover {
+    color: $lighter-grey;
+    background-color: transparent;
+    border: 1px solid $dark-blue;
+    border-radius: 1px;
+  }
 }
 
 .agreement__checkbox-icon-checked {
@@ -40,6 +47,12 @@
 
 .agreement__label-checkbox input:checked + .agreement__checkbox-icon-wrapper .agreement__checkbox-icon-checked {
   display: block;
+}
+
+.agreement__label-checkbox input:disabled + .agreement__checkbox-icon-wrapper {
+  color: transparent;
+  background-color: transparent;
+  border: 1px solid $lighter-grey;
 }
 
 .agreement__button {

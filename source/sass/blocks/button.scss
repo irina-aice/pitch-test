@@ -21,4 +21,12 @@
     color: $white;
     background-color: $dark-blue;
   }
+
+  &--submit:hover {
+    background-color: $light-blue;
+  }
+
+  &--submit:active {
+    background-color: $lighter-blue;
+  }
 }
