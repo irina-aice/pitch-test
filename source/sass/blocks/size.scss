@@ -58,7 +58,7 @@
   display: inline-block;
   font-size: 20px;
   text-transform: uppercase;
-  transition: all .35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 @media (min-width: $width-desktop) {
@@ -91,7 +91,7 @@
   height: 48px;
   border: 1px solid rgba($dark-blue, 0);
   border-radius: 50%;
-  transition: all .35s ease-in-out;
+  transition: all 0.35s ease-in-out;
   transform: scale(0.5);
 }
 

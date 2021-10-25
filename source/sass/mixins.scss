@@ -17,12 +17,11 @@
   box-sizing: border-box;
   margin: 0 auto;
 
-  /*@media (min-width: $width-tablet) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }*/
-
   @media (min-width: $width-desktop) {
     max-width: 1392px;
   }
+}
+
+@mixin animation {
+  transition: all 0.35s ease-in-out;
 }

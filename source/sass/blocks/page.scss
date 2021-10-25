@@ -1,5 +1,10 @@
+.page__item--scroll {
+  @include container;
+}
+
 @media (min-width: $width-desktop) {
-  .page {
+  .page__wrapper {
+    @include container;
     display: flex;
   }
 
@@ -11,5 +16,7 @@
     width: 55.88%;
     max-height: 768px;
     overflow-y: auto;
+    padding-left: 92px;
+    padding-right: 61px;
   }
 }
