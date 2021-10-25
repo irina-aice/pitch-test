@@ -13,6 +13,7 @@
   }
 
   .page__item--scroll {
+    position: relative;
     width: 55.88%;
     max-height: 768px;
     overflow-y: auto;
